@@ -38,11 +38,14 @@ jobs:
 #           publish_dir: ./public
           
       - name: Deploy to Tencent CloudBase
-        uses: TencentCloudBase/cloudbase-action@v2.0.1
+#         uses: TencentCloudBase/cloudbase-action@v2.0.1
+        uses: TencentCloudBase/cloudbase-action@v1.1.1
         with:
           secretId: ${{secrets.secretId}}
           secretKey: ${{secrets.secretKey}}
           envId: ${{secrets.envId}}
+          staticSrcPath: public
+          
 
 #       - name: Install NodeJS
 #         uses: actions/setup-node@v2
