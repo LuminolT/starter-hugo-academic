@@ -33,10 +33,25 @@ jobs:
 #           github_token: ${{ secrets.GITHUB_TOKEN }}
 #           publish_dir: ./public
           
-      - name: Deploy to Tencent CloudBase
-        uses: TencentCloudBase/cloudbase-action@v2.0.1
+#       - name: Deploy to Tencent CloudBase
+#         uses: TencentCloudBase/cloudbase-action@v2.0.1
+#         with:
+#           secretId: ${{secrets.secretId}}
+#           secretKey: ${{secrets.secretKey}}
+#           envId: ${{secrets.envId}}
+
+      - name: Install NodeJS
+        uses: actions/setup-node@v2
         with:
-          secretId: ${{secrets.secretId}}
-          secretKey: ${{secrets.secretKey}}
-          envId: ${{secrets.envId}}
-#           staticSrcPath: public
+          node-version: '14'
+
+      - name: Install Tencent Cloud Cloudbase
+        shell: bash
+        run: npm i -g @cloudbase/cli
+
+      - name: Publish Blog to Tencent Static Site
+        working-directory: ./public
+        shell: bash
+        run: |
+          tcb login --apiKeyId ${{ secrets.secretId }} --apiKey ${{ secrets.secretKey }}
+          tcb hosting deploy ./ -e ${{ secrets.envId }}   
