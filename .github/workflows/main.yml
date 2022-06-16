@@ -26,37 +26,41 @@ jobs:
       - name: Build
         run: hugo --minify
 
-#       - name: Deploy
-#         uses: peaceiris/actions-gh-pages@v3
-#         if: ${{ github.ref == 'refs/heads/main' }}
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           publish_dir: ./public
-          
-#       - name: Deploy to Tencent CloudBase
-#         uses: TencentCloudBase/cloudbase-action@v2.0.1
-#         with:
-#           secretId: ${{secrets.secretId}}
-#           secretKey: ${{secrets.secretKey}}
-#           envId: ${{secrets.envId}}
-
-      - name: Install NodeJS
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install Tencent Cloud Cloudbase
-        shell: bash
-        run: npm i -g @cloudbase/cli
-        
       - name: Delete webfonts
-        working-directory: ./public
         shell: bash
-        run: rm -rf /webfonts
+        run: rm -rf ./public/webfonts
 
-      - name: Publish Blog to Tencent Static Site
-        working-directory: ./public
-        shell: bash
-        run: |
-          tcb login --apiKeyId ${{ secrets.secretId }} --apiKey ${{ secrets.secretKey }}
-          tcb hosting deploy ./ -e ${{ secrets.envId }}   
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          
+      - name: Deploy to Tencent CloudBase
+        uses: TencentCloudBase/cloudbase-action@v2.0.1
+        with:
+          secretId: ${{secrets.secretId}}
+          secretKey: ${{secrets.secretKey}}
+          envId: ${{secrets.envId}}
+
+#       - name: Install NodeJS
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: '14'
+
+#       - name: Install Tencent Cloud Cloudbase
+#         shell: bash
+#         run: npm i -g @cloudbase/cli
+        
+#       - name: Delete webfonts
+#         working-directory: ./public
+#         shell: bash
+#         run: rm -rf /webfonts
+
+#       - name: Publish Blog to Tencent Static Site
+#         working-directory: ./public
+#         shell: bash
+#         run: |
+#           tcb login --apiKeyId ${{ secrets.secretId }} --apiKey ${{ secrets.secretKey }}
+#           tcb hosting deploy ./ -e ${{ secrets.envId }}   
