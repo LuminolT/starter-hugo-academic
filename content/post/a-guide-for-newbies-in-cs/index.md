@@ -9,10 +9,10 @@ summary: 网络空间安全指北
 projects: []
 
 # Date published
-date: '2022-6-16T00:00:00Z'
+date: '2022-06-16T00:00:00Z'
 
 # Date updated
-lastmod: '2022-6-16T00:00:00Z'
+lastmod: '2022-06-16T00:00:00Z'
 
 # Is this an unpublished draft?
 draft: false
