@@ -66,4 +66,4 @@ highlight_name: true
 
 Luminol is a undergraduate of cyberspace security of Shanghai University. His research interests include cryptography and blochchain. He is the leader of Cake1salie, one CTF team of Shanghai University.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+<!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
