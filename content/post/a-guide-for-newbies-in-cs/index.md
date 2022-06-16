@@ -9,10 +9,10 @@ summary: 网络空间安全指北
 projects: []
 
 # Date published
-date: '2020-12-13T00:00:00Z'
+date: '2022-6-16T00:00:00Z'
 
 # Date updated
-lastmod: '2020-12-13T00:00:00Z'
+lastmod: '2022-6-16T00:00:00Z'
 
 # Is this an unpublished draft?
 draft: false
@@ -39,7 +39,7 @@ categories:
   - Tips
 ---
 
-## Intro
+## 前言
 
 Hi 你好，如果你想选择网络空间安全作为你大学后 3 年的专业，但还在犹豫的话，可以看看这篇文章。
 
