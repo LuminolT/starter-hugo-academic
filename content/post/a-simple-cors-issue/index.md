@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "A Simple Cors Issue"
+title: "A Simple CORS Issue"
 subtitle: "后端开发手记，关于CORS接入封锁的解决"
 summary: "后端开发手记，关于CORS接入封锁的解决"
 authors: [admin]
