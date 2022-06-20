@@ -32,4 +32,4 @@ The following links are from my friends, you can check their personal page.
 
 [Chasing](https://chasing1020.github.io/), Gopher, Major in Computer Science, SHU
 
-[Shaosy](https://siyangshao.github.io/about/), ACMer, Major in Computer Engineering, NTU
+[Shaosy](https://siyangshao.github.io/message/), ACMer, Major in Computer Engineering, NTU
