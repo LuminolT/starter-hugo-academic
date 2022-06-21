@@ -11,6 +11,7 @@ date: 2022-06-21T18:52:53+08:00
 lastmod: 2022-06-21T18:52:53+08:00
 featured: false
 draft: false
+math: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
