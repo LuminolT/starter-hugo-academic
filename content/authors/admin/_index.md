@@ -20,14 +20,13 @@ bio: My research interests include cryptography and blochchain.
 interests:
   - Modern Cryptography
   - Blockchain
-  - Information Retrieval
 
 # Education to show in About widget
 education:
   courses:
-    - course: (now) Beng in Cyberspace Security
+    - course: (now) BEng in Cyberspace Security
       institution: Shanghai University
-      year: 2020
+      year: 2024
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
