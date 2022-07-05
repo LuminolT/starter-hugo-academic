@@ -6,7 +6,7 @@ title: Luminol Chen
 superuser: true
 
 # Role/position/tagline
-role: 2020 Undergraduate in Cyberspace Security
+role: 2024 Undergraduate in Cyberspace Security
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -20,6 +20,8 @@ bio: My research interests include cryptography and blochchain.
 interests:
   - Modern Cryptography
   - Blockchain
+  - ZKP
+  - MPC
 
 # Education to show in About widget
 education:
